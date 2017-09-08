@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mapzap - Build A Maps App">
+    <meta name="author" content="Bryan R. McBride">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <title>Mapzap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/jumbotron-narrow.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="https://mapzap.github.io/build.html">Builder</a></li>
+            <li role="presentation"><a href="https://github.com/mapzap/mapzap.github.io">GitHub</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Mapzap.me</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Build A Maps App</h1>
+        <p class="lead">A simple, lightweight tool for quickly standing up responsive web mapping applications <em>without having to write any code</em>! Built on the Google Maps JavaScript API, this utility lets you configure your settings via simple URL parameters.</p>
+        <p><a class="btn btn-lg btn-success" href="https://mapzap.github.io/build.html" role="button">Start Building!</a></p>
+      </div>
+
+      <div class="row marketing">
+        <img src="https://mapzap.github.io/screenshots/mobile.png" alt="Mobile screenshot" class="img-rounded" width="100%">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Examples</h3>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="https://mapzap.github.io/?src=https://raw.githubusercontent.com/benbalter/dc-wifi-social/master/bars.geojson&fields=name,address&title=DC%20WiFi%20Social&sortfield=name&attribution=https://github.com/benbalter/dc-wifi-social" target="_blank">DC WiFi Social</a> - A GitHub based collaborative list of DC locations that serve up both Internet and Alcohol from <a href="https://github.com/benbalter/dc-wifi-social" target="_blank">Ben Balter</a></li>
+            <li class="list-group-item"><a href="https://mapzap.github.io/?src=https%3A%2F%2Fd2ad6b4ur7yvpq.cloudfront.net%2Fnaturalearth-3.3.0%2Fne_110m_admin_1_states_provinces_shp.geojson&icon=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fthumb%2Fa%2Fa4%2FFlag_of_the_United_States.svg%2F320px-Flag_of_the_United_States.svg.png&title=US%20States&fields=region%2Cname%2Cname_alt%2Cadm1_code%2Cwikipedia&attribution=http%3A%2F%2Fgeojson.xyz&map=roadmap&sortfield=name&sortorder=asc&style=%7B%0A%20%20%22property%22%3A%20%22region%22%2C%0A%20%20%22values%22%3A%20%7B%0A%20%20%20%20%22West%22%3A%20%22%23DA0796%22%2C%0A%20%20%20%20%22South%22%3A%20%22%23CB0D0C%22%2C%0A%20%20%20%20%22Northeast%22%3A%20%22%23FF8819%22%2C%0A%20%20%20%20%22Midwest%22%3A%20%22%23FFD300%22%0A%20%20%7D%0A%7D" target="_blank">US States</a> - Natural Earth admin 1 states provinces shp data from <a href="http://geojson.xyz/" target="_blank">geojson.xyz</li>
+            <li class="list-group-item"><a href="https://mapzap.github.io/?src=https://web.fulcrumapp.com/shares/82982e4c55707a34.geojson&fields=name,full_name,ground,league,city,state_province,country,photo&title=Football%20Clubs%20of%20Europe&sortfield=name&attribution=Courtesy%20of%20Coleman%20McCormick" target="_blank">Football Clubs of Europe</a> - A Fulcrum mapping project from <a href="https://github.com/colemanm/" target="_blank">Coleman McCormick</a></li>
+            <li class="list-group-item"><a href="https://mapzap.github.io/?src=https://api.tiles.mapbox.com/v3/mapbox.o11ipb8h/markers.geojson&fields=name,description&title=NYC%20Coffee%20Shops&sortfield=name&attribution=Courtesy%20of%20Mapbox" target="_blank">NYC Coffee Shops</a> - via <a href="https://www.mapbox.com/blog/open-web-geojson/" target="_blank">Mapbox</a></li>
+            <li class="list-group-item"><a href="https://mapzap.github.io/?src=https://raw.githubusercontent.com/cageyjames/GeoJSON-Ballparks/master/ballparks.geojson&fields=Ballpark,Team,League,Class&title=GeoJSON%20Ballparks&sortfield=Ballpark&attribution=https://github.com/cageyjames/GeoJSON-Ballparks&style=%7B%22icon%22:%7B%22path%22:0,%22scale%22:4,%22strokeColor%22:%22white%22,%22strokeWeight%22:1,%22fillColor%22:%22orange%22,%22fillOpacity%22:1%7D%7D" target="_blank">Baseball Parks</a> - A GeoJSON Ballpark mapping project from <a href="https://github.com/cageyjames/GeoJSON-Ballparks" target="">James Fee</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Fast &amp; Easy</h4>
+          <p>Define app configuration parameters manually or with the handy <a href="https://mapzap.github.io/build.html" target="_blank">Builder Tool</a>.</p>
+
+          <h4>GeoJSON &amp; CSV</h4>
+          <p>Data source can be any web accessible GeoJSON or CSV (with latitude &amp; longitude columns) file.</p>
+
+          <h4>Responsive</h4>
+          <p>Generate a fullscreen mobile-friendly web app with responsive navbar, modal popups, and map/table/split views.</p>
+
+          <h4>Serverless</h4>
+          <p>Completely client-side, can be hosted for free on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Customizable</h4>
+          <p>Set the app title, icon, display fields, data attribution &amp; styles for a custom experience.</p>
+
+          <h4>Best In Class</h4>
+          <p>Built on the incredibly popular <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> and <a href="https://developers.google.com/maps" target="_blank">Google Maps</a> frameworks.</p>
+
+          <h4>Interactive</h4>
+          <p>Interactive feature table with filtering, sorting, and column toggling via <a href="http://bootstrap-table.wenzhixin.net.cn/" target="_blank">Bootstrap Table</a>.</p>
+
+          <h4>Open Source</h4>
+          <p>You can <a href="https://github.com/mapzap/mapzap.github.io" target="_blank">download or fork the code repository</a> and host your own version. If you self-host, please use your own Google Maps API key.</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2017 <a href="http://mapzap.me" target="_blank">mapzap.me</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+  </body>
+</html>
